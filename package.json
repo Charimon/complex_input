@@ -2,7 +2,7 @@
   "name": "complex_input",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot --mode=dev",
     "build": "webpack --mode=build"
