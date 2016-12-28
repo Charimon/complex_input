@@ -1,0 +1,107 @@
+@import bourbon
+
+.container
+  +display(flex)
+  +flex-direction(row)
+  +flex-grow(0)
+  +flex-shrink(0)
+  +flex-basis(auto)
+  border-radius:  4px
+  border:         1px solid #d9d9d9
+  padding:        8px
+  position:       relative
+  text-transform: none
+  box-sizing:     border-box
+
+.tags
+  +display(flex)
+  +flex-grow(1)
+  +flex-shrink(0)
+  +flex-basis(0)
+  +flex-direction(row)
+  +justify-content(flex-start)
+  +align-items(center)
+  +flex-wrap(wrap)
+
+.tag
+  +display(flex)
+  +flex-direction(row)
+  +flex-grow(0)
+  +flex-shrink(0)
+  +flex-basis(auto)
+  +align-items(center)
+  +justify-content(center)
+  border: 1px solid #ddd
+  padding: 4px
+  background: #F2F7FD
+  border-radius: 10000px
+  margin: 3px
+
+.selectedTag
+  background-color: darken(#F2F7FD, 10%)
+  border-color: darken(#ddd, 10%)
+
+  .tagCloseIcon
+    path
+      fill: #fff
+    &:hover path
+      fill: darken(#fff, 10%)
+
+.tagText
+  font-size: 14px
+  color: #7AAEEA
+  padding-left: 8px
+
+.tagCloseIcon
+  height: 10px
+  +display(flex)
+  +flex-grow(0)
+  +flex-shrink(0)
+  +flex-basis(auto)
+  +align-self(center)
+  padding: 3px
+  cursor: pointer
+
+  path
+    fill: #ccc
+
+  &:hover path
+    fill: darken(#ccc, 10%)
+
+.input
+  outline: 0
+  border: none
+  font-size: 1em
+  padding: 0.5em
+
+.container :global svg
+  height: 10px
+  +display(flex)
+  +flex-grow(0)
+  +flex-shrink(0)
+  +flex-basis(auto)
+  +align-self(center)
+  padding: 3px
+
+.dropdown
+  position:                   absolute
+  background:                 #fff
+  max-height:                 200px
+  z-index:                    1000
+  overflow:                   auto
+  top:                        100%
+  left:                       0
+  right:                      0
+  border-bottom-left-radius:  4px
+  border-bottom-right-radius: 4px
+  border:                     1px solid #ddd
+  margin-top:                 -2px
+  margin-left:                -1px
+  margin-right:               -1px
+
+.dropdownOption
+  padding: 8px
+  cursor: pointer
+
+.dropdownOptionSelected
+  background: #EDF5FF
