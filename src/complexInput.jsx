@@ -228,12 +228,12 @@ export default class ComplexInput extends React.Component {
 
 ComplexInput.propTypes = {
   value: React.PropTypes.oneOfType([React.PropTypes.instanceOf(Map), React.PropTypes.string, React.PropTypes.instanceOf(List), React.PropTypes.instanceOf(OrderedSet)]),
+  options: React.PropTypes.instanceOf(List),
   displayValueTransformer: React.PropTypes.func,
   displayOptionTransformer: React.PropTypes.func,
   optionToValueTransformer: React.PropTypes.func,
   valueToOptionTransformer: React.PropTypes.func,
   optionsIsEquals: React.PropTypes.func,
   filterOptionByInputValue: React.PropTypes.func,
-  option: React.PropTypes.func,
   onChange: React.PropTypes.func
 }
