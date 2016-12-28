@@ -1,6 +1,11 @@
 # complex_input
 React version of complex input.
 
+### import
+```
+import ComplexInput from 'complex_input'
+```
+
 ### types:
 ```
   value: A | Immutable.List(A) | Immutable.OrderedSet(A)
