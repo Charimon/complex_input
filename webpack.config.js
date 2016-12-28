@@ -20,6 +20,10 @@ var config = {
     filename: '[name].js',
     publicPath: '/assets/javascripts/'
   },
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom'
+  },
   module : {
     loaders : [
       { test: /\.jsx?/, include: APP_DIR, loader: 'babel'},
